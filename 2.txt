@@ -1,0 +1,25 @@
+// Java program to reverse a number
+
+public class GFG {
+	static int reversDigits(int num)
+	{
+		// converting number to string
+		StringBuffer string
+			= new StringBuffer(String.valueOf(num));
+
+		// reversing the string
+		string.reverse();
+
+		// converting string to integer
+		num = Integer.parseInt(String.valueOf(string));
+
+		// returning integer
+		return num;
+	}
+	public static void main(String[] args)
+	{
+		int num = 4562;
+		System.out.println("Reverse of no. is "
+						+ reversDigits(num));
+	}
+}
